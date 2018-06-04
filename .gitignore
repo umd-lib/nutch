@@ -6,3 +6,14 @@ build/
 runtime/
 logs/
 /bin/
+
+# Ignore Eclipse metadata files
+.classpath
+.project
+
+# Ignore crawl directory
+LibCrawl/
+
+# Ignore ivy jar (not sure why this shows up)
+ivy/ivy-2.4.0.jar
+
