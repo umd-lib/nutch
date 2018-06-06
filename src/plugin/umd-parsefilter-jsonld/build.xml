@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<project name="umd-parsefilter-jsonld" default="jar-core">
+
+  <import file="../build-plugin.xml"/>
+
+   <!-- Add compilation dependencies to classpath -->
+   <path id="plugin.deps">
+   	 <!-- parse-html is used for the "main" method -->
+     <fileset dir="${nutch.root}/build">
+       <include name="**/parse-html/*.jar" />
+      </fileset>
+    </path>
+</project>
