@@ -1140,6 +1140,7 @@
         <source path="${plugins.dir}/urlnormalizer-slash/src/java/" />
         <source path="${plugins.dir}/urlnormalizer-slash/src/test/" />
         <source path="${plugins.dir}/umd-parsefilter-jsonld/src/java/" />
+        <source path="${plugins.dir}/umd-index-title/src/java/" />
         <output path="${build.classes}" />
       </classpath>
     </eclipse>

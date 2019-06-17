@@ -99,6 +99,7 @@
     <ant dir="urlnormalizer-regex" target="deploy"/>
     <ant dir="urlnormalizer-slash" target="deploy"/>
     <ant dir="umd-parsefilter-jsonld" target="deploy"/>
+    <ant dir="umd-index-title" target="deploy"/>
   </target>
   
   <!-- ====================================================== -->
