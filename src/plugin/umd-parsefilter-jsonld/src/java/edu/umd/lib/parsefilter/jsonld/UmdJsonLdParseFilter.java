@@ -60,6 +60,12 @@ public class UmdJsonLdParseFilter implements HtmlParseFilter {
   @Override
   public ParseResult filter(Content content, ParseResult parseResult,
       HTMLMetaTags metaTags, DocumentFragment doc) {
+    LOG.error("content.getContentType()="+content.getContentType() );
+    // Skip PDF files, as it causes parsing to hang
+    if (content.getContentType().equals("application/pdf")) {
+      LOG.debug("Skipping processing of 'application/pdf' document");
+      return parseResult;
+    }
 
     Parse parse = parseResult.get(content.getUrl());
     String rawHtml = new String(content.getContent());
