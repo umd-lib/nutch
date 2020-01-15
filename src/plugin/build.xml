@@ -98,6 +98,8 @@
     <ant dir="urlnormalizer-querystring" target="deploy"/>
     <ant dir="urlnormalizer-regex" target="deploy"/>
     <ant dir="urlnormalizer-slash" target="deploy"/>
+    <ant dir="umd-parsefilter-jsonld" target="deploy"/>
+    <ant dir="umd-index-title" target="deploy"/>
   </target>
   
   <!-- ====================================================== -->
@@ -223,5 +225,6 @@
     <ant dir="urlnormalizer-querystring" target="clean"/>
     <ant dir="urlnormalizer-regex" target="clean"/>
     <ant dir="urlnormalizer-slash" target="clean"/>
+    <ant dir="umd-parsefilter-jsonld" target="clean"/>
   </target>
 </project>
